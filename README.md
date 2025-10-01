@@ -1,64 +1,86 @@
-The Job Search Tool is an AI-powered application designed to fetch job openings from multiple job portals based on user-specified keywords. It aggregates relevant job listings and provides direct application links to users in a consolidated view.
 
-2. Design and Architecture
-  2.1 System Components
-  User Interface: Allows users to enter search keywords and displays job search results.
+# 🚀 Job Search Tool
 
-Job Search Engine: Core module that interacts with various job portals via APIs or web scraping.
+The **Job Search Tool** is an **AI-powered application** that helps job seekers by automatically fetching job openings from multiple portals (e.g., LinkedIn, Naukri). Just type in your desired **keywords** (like *“Java Developer”* or *“Data Scientist”*) and get a consolidated list of jobs with **direct application links** — all in one place.
 
-Data Processing Module: Filters, processes, and formats the collected job data.
+---
 
-Results Aggregator: Aggregates job listings from multiple sources and removes duplicates.
+## 🏗️ Design & Architecture
 
-Application Link Handler: Provides direct clickable links for users to apply.
+### 🔹 System Components
 
-2.2 Workflow
-User submits one or more keywords.
+* **User Interface** – Enter search keywords & view results.
+* **Job Search Engine** – Connects to portals via **APIs or web scraping**.
+* **Data Processing Module** – Cleans & structures raw job data.
+* **Results Aggregator** – Combines listings, removes duplicates.
+* **Application Link Handler** – Provides **direct apply links**.
 
-The Job Search Engine queries job portals using those keywords.
+---
 
-Data Processing Module cleans and structures raw data.
+### 🔹 Workflow (How it works)
 
-Results Aggregator consolidates listings from all portals.
+1️⃣ User enters one or more keywords.
+2️⃣ **Job Search Engine** queries multiple job portals.
+3️⃣ **Data Processing Module** filters & formats job data.
+4️⃣ **Results Aggregator** merges listings & eliminates duplicates.
+5️⃣ Final job results + **clickable application links** are shown.
 
-Processed job listings with application links are displayed to the user.
+---
 
-3. Components Details
-3.1 Job Portals Integration
-Supports multiple job portals such as LinkedIn, Naukri, etc.
+## ⚙️ Component Details
 
-Uses official APIs where available or web scraping when APIs are not provided.
+### 🌐 Job Portals Integration
 
-Handles pagination and anti-bot mechanisms.
+* Supports **LinkedIn, Naukri, and more**.
+* Uses official APIs (if available) or **web scraping**.
+* Handles pagination & anti-bot protection.
 
-3.2 Keyword Search
-Supports single and multi-keyword searches.
+### 🔍 Keyword Search
 
-Matches keywords against job titles, descriptions, and location filters if applicable.
+* Works with single or multiple keywords.
+* Matches against **job title, description, and location filters**.
 
-3.3 Data Handling
-Normalizes outputs from different job portals.
+### 📊 Data Handling
 
-Removes duplicate entries.
+* Normalizes different portal outputs.
+* Removes duplicates.
+* Sorts jobs by **relevance or posting date**.
 
-Sorts and ranks jobs by relevance or date posted.
+---
 
-4. Usage Instructions
-4.1 Prerequisites
-Python environment (version x.x or later)
+## 🖥️ Usage Instructions
 
-Installed libraries: requests, BeautifulSoup (for scraping), any API clients required
+### ✅ Prerequisites
 
-4.2 Running the Tool
-Launch the tool via the command line or interface.
+* Python (>= 3.x)
+* Libraries: `requests`, `beautifulsoup4`, plus API clients if needed
 
-Enter the keyword(s) for the type of job search you want.
+### ▶️ Running the Tool
 
-Wait as the tool fetches and processes listings.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/job-search-tool.git
+cd job-search-tool
 
-Review consolidated results with job titles, companies, and application links.
+# Install dependencies
+pip install -r requirements.txt
 
-4.3 Extending the Tool
-Add new job portal integrations by implementing their API or scraping logic in the Job Search Engine module.
+# Run the tool
+python main2.py
+```
 
-Customize search filters, ranking algorithms, or UI as needed.
+* Enter keywords (e.g., *“AI Engineer”*).
+* Wait for results to be fetched & cleaned.
+* View a **consolidated job list** with **direct application links**.
+
+---
+
+## 🌱 Extending the Tool
+
+* Add new portals → implement their API or scraping logic in **Job Search Engine**.
+* Customize search filters, ranking algorithms, or UI.
+* Expand with **AI-based ranking** for smarter job recommendations.
+
+---
+
+✨ **With this tool, job hunting becomes smarter, faster, and easier.**
