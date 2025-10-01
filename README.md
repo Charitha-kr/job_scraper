@@ -1,9 +1,8 @@
-
 The Job Search Tool is an AI-powered application designed to fetch job openings from multiple job portals based on user-specified keywords. It aggregates relevant job listings and provides direct application links to users in a consolidated view.
 
 2. Design and Architecture
-2.1 System Components
-User Interface: Allows users to enter search keywords and displays job search results.
+  2.1 System Components
+  User Interface: Allows users to enter search keywords and displays job search results.
 
 Job Search Engine: Core module that interacts with various job portals via APIs or web scraping.
 
